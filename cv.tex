@@ -1,0 +1,117 @@
+\documentclass[10pt,a4paper,roman]{moderncv}
+
+%% ModernCV themes
+\moderncvstyle{banking}
+% \moderncvcolor{black}
+\renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+\renewcommand{\refname}{Publications and Presentations}
+
+%% Character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+
+%% Adjust the page margins
+\usepackage[margin=0.5in]{geometry}
+\recomputelengths
+
+%% Personal data
+\firstname{Kyle}
+\familyname{Onghai}
+% \title{Resumé} 
+\address{18 Saints Orchard Road}{Port Jefferson, NY 11777} 
+\mobile{+1~(631)~464~9890} 
+\email{onghaik@g.ucla.edu}
+
+%%------------------------------------------------------------------------------
+%% Content
+%%------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+\vspace{-1cm}
+\section{Education}
+
+\cventry{September~2020~--~Expected~2024}{B.S. Mathematics, Specialization in Computing}{University of California, Los Angeles}{Los Angeles, CA}{}{
+	\begin{itemize}[leftmargin=1.5em]
+		\item Honors College, Dean's List, Alumni Scholar's Club Member
+		\item Relevant Coursework: Honors Algebra, Honors Real Analysis, Honors
+			Linear Algebra, Honors Numerical Analysis, Probability, Differential
+			Geometry, Complex Analysis, Nonlinear Differential Equations, Discrete
+			Mathematics, Physics, Introduction to Programming, Python and
+			Applications, Web Programming
+		\item Cumulative GPA: 3.87, Major GPA: 3.86
+	\end{itemize}
+}  % arguments 3 to 6 can be left empty
+
+\cventry{September~2016~--~June~2020}{High School Diploma}{Earl L. Vandermeulen High School}{Port Jefferson, NY}{}{
+	\begin{itemize}[leftmargin=1.5em]
+		\item Graduated Salutatorian
+		\item Received the New York Regents Scholarship
+		\item National AP Scholar, National Honor Society Member
+	\end{itemize}
+}
+
+\section{Activites, Awards, and Leadership}
+
+\cventry{}{}{University of California, Los Angeles (UCLA)}{Los Angeles, CA}{}{
+	\vspace{-1.5em}
+	\begin{itemize}[leftmargin=1.5em]
+		\item Top 500 on 81st William Lowell Putnam Mathematical Competition (2020)
+		\item Member of the UCLA ICPC Club that sends teams to compete at the ACM ICPC
+	\end{itemize}
+}
+
+\section{Research/Work Experience}
+
+\cventry{July~2023}{Summer Geometry Initiative 2023}{Massachusetts Institute of Technology}{Cambridge, MA}{}{
+}
+
+\cventry{August~2022}{12th Montreal Industrial Problem Solving Workshop}{Centre de Researches Mathematiques}{Montreal, QC}{}{
+	\begin{itemize}[leftmargin=1.5em]
+		\item Built a prototype for the International Air Transport Association to map air turbulence using real-time eddy dissipation rate data.
+		\item Allows pilots to avoid patches of high air turbulence in order to reduce wasteful fuel consumption and number of injuries.
+	\end{itemize}
+}
+
+\cventry{June~2022~--~August~2022}{REU: Research Challenges of Computational Methods in Discrete Mathematics}{Moravian University}{Bethlehem, PA}{}{
+	\begin{itemize}[leftmargin=1.5em]
+		\item Established the theory of distribution graphs in the study of chip-firing games on simple graphs.
+		\item Described the contractions of 2-edge-connected graphs with maximum matching number at most 4.
+	\end{itemize}
+}
+
+\cventry{June~2021~--~August~2021}{Undergaduate Researcher}{Collaborative Mathematical Research Program}{Online}{}{
+	\begin{itemize}[leftmargin=1.5em]
+		\item Showed that there are infinitely many \(k\)-Diophantine \(m\)-tuples over a finite field with a sufficiently large, odd prime cardinality.
+		\item Proved a closed-form formula for the number of 3-Diophantine triples in a finite field with an odd prime cardinality.
+		\item Developed an asymptotic formula for the number of \(k\)-Diophantine \(m\)-tuples in a finite field with an odd prime cardinality.
+		% \item Presented this work at the Young Mathematician Conference (August 2021) at The Ohio State University.
+	\end{itemize}
+}
+
+\cventry{June~2019~--~August~2019}{Simons Summer Research Fellow}{Stony Brook University}{Stony Brook, NY}{}{
+	\begin{itemize}[leftmargin=1.5em]
+		\item Added photoacoustic tomography functionality to Orthopaedic Bioengineering Lab's proprietary quantitative ultrasound machine.
+		\item Devised analytic method in MATLAB to reconstruct images of phantoms using Fourier transforms.
+	\end{itemize}
+}
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications_and_presentations} % a bibtex file containing the list of publications
+
+\section{Skills}
+
+\cvitem{Software}{Python, LaTeX, SAGE, C/C++, MATLAB, Lua, BASH, Linux, Rust}
+\cvitem{Hardware}{Raspberry Pi, Arduino}
+\cvitem{Languages}{English (Native), Mandarin (Intermediate), Latin}
+
+\section{Community Involvement}
+
+\cventry{Patient Education Volunteer}{November~2018~--~February~2020}{Stony Brook University Medical Center}{Stony Brook, NY}{}{
+	\begin{itemize}[leftmargin=1.5em]
+		\item Taught patients how to access and use the Patient Portal, and received the Presidential Award for Volunteer Service.
+	\end{itemize}
+}
+
+\end{document}
