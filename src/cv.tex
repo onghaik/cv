@@ -1,0 +1,236 @@
+\documentclass[10pt,a4paper]{moderncv}
+
+%% ModernCV themes
+\moderncvstyle{banking}
+% \moderncvcolor{black} \renewcommand{\familydefault}{\sfdefault}
+\nopagenumbers{}
+
+%% Character encoding
+\usepackage[utf8]{inputenc} \usepackage{enumitem}
+
+%% Adjust the page margins
+\usepackage[margin=0.5in]{geometry} \recomputelengths
+
+%% BibLatex
+\usepackage[style=verbose,maxnames=1000]{biblatex}
+\addbibresource{docs.bib} \nocite{*}
+%% Completely remove gap between subheadings and bib entries
+\defbibheading{bibliography}[\bibname]{%
+  \section{Publications and Presentations}%
+}
+
+\defbibheading{subbibliography}[\refname]{%
+  \vspace{-0.3em}%
+  \noindent{\normalsize\bfseries#1}\par\nopagebreak\vspace{-0.75em}%
+}
+
+\setlength{\bibitemsep}{0.2em} % Controls spacing between individual bib entries
+\AtBeginBibliography{\small}
+
+%% Personal data
+\firstname{Kyle} \familyname{Onghai}
+% \title{Resumé} \address{18 Saints Orchard Road}{Port Jefferson, NY
+% 11777} \mobile{+1~(631)~464~9890} \email{ko1247@princeton.edu}
+\email{onghaik@gmail.com} \homepage{onghaik.github.io}
+\social[linkedin]{onghaik}
+
+\usepackage{fontspec}
+% Force fontspec to search for the file name rather than the system
+% font name
+\defaultfontfeatures[\rmfamily,\sffamily]{}
+
+%% ------------------------------------------------------------------------------
+%% Content
+%% ------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle \vspace{-1cm}
+\section{Education}
+
+\cventry{August~2024~--~Present}{Ph.D. Operations Research \&
+  Financial Engineering}{Princeton University}{Princeton, NJ}{}{
+  \begin{itemize}
+  \item Focus on stochastic control and mathematical finance and their
+    applications to energy markets and decentralized finance.
+  \item Advised by Professor Ronnie Sircar.
+  \end{itemize}
+} % arguments 3 to 6 can be left empty
+
+\cventry{September~2020~--~June~2024}{B.S. Mathematics, Specialization
+  in Computing}{University of California, Los Angeles}{Los Angeles,
+  CA}{}{
+  \begin{itemize}
+  \item Highest Honors, Honors College, Alumni Scholars Club
+  \item Top 500 on the 81st William Lowell Putnam Mathematical
+    Competition
+    % \item Relevant Coursework: Graduate Numerical Analysis, Honors
+    %   Algebra, Probability, Enumerative Combinatorics, Differential
+    %   Geometry, Complex Analysis, Ordinary Differential Equations,
+    %   Discrete Mathematics, Physics, Introduction to Programming,
+    %   Python and Applications, Web Programming
+    % \item Cumulative GPA: 3.86, Major GPA: 3.87
+  \end{itemize}
+}
+
+% \cventry{September~2016~--~June~2020}{Salutatorian}{Earl L.
+% Vandermeulen High School}{Port Jefferson, NY}{}{
+% \begin{itemize}[leftmargin=1.5em]
+% \item New York Regents Scholarship recipient, National AP scholar.
+% \end{itemize}
+% }
+
+%   \section{Awards, and Leadership}
+%   \cventry{}{}{University of California, Los Angeles (UCLA)}{Los
+%   Angeles, CA}{}{ \vspace{-1.5em}
+%   \begin{itemize}[leftmargin=1.5em]
+%   \item
+%     %   \item Member of the UCLA ICPC Club that sends teams to
+%     compete at the ACM ICPC
+%   \end{itemize}
+% }
+
+\section{Research Experience}
+
+\cventry{May~2025~--~Present}{Ph.D. Student}{Princeton
+  University}{Princeton, NJ}{}{
+  \begin{itemize}
+  \item Forecasting data center electricity load growth and its effect
+    on wholesale electricity prices through continuous-time stochastic
+    processes.
+  \item Analyzing a capacity expansion problem for a profit-maximizing
+    central grid planner meeting uncertain demand using stochastic
+    optimal control.
+  \item Formalizing competitive, recursive subsidies powered by
+    decentralized physical infrastructure networks (DePINs) for solar
+    generators.
+  \end{itemize}
+}
+
+\cventry{July~2023~--~August~2023}{Summer Geometry Initiative (SGI)
+  2023 Fellow}{Massachusetts Institute of Technology}{Cambridge,
+  MA}{}{
+  \begin{itemize}
+  \item Modeled clogging within three-dimensional stochastic
+    Poisson-Voronoi foams by calculating the distribution of edge
+    lengths and simulating in Voro++.
+  \item Generalized a method that generates helix-free stripes in knit
+    graph designs to handle more than two boundaries and compute the
+    relevant harmonic interpolations in Geometry Central.
+  \item Devised a mesh decimation algorithm based on iterated local
+    operations that adheres to preferred edge alignment directions in
+    libigl.
+  \end{itemize}
+}
+
+\cventry{August~2022}{12th Montreal Industrial Problem Solving
+  Workshop}{Centre de Recherches Math\'{e}matiques}{Montreal, QC}{}{
+  \begin{itemize}
+  \item Built a prototype for the International Air Transport
+    Association to map air turbulence using real-time eddy dissipation
+    rate data.
+  \item Incorporated pilot feedback to optimize plots for
+    interpretability.
+  \end{itemize}
+}
+
+\cventry{June~2022~--~August~2022}{REU: Research Challenges of
+  Computational Methods in Discrete Mathematics}{Moravian
+  University}{Bethlehem, PA}{}{
+  \begin{itemize}
+  \item Introduced distribution graphs in the study of chip-firing
+    games on simple graphs.
+  \item Classified the contractions of non-supereulerian,
+    2-edge-connected graphs with matching number at most 4.
+  \end{itemize}
+}
+
+\cventry{June~2021~--~August~2021}{Undergraduate
+  Researcher}{Collaborative Mathematical Research Program}{Online}{}{
+  \begin{itemize}
+  \item Showed that, given \(m\geq k\), there exists at least one
+    \(k\)-Diophantine \(m\)-tuple over a finite field with a
+    sufficiently large, odd prime cardinality.
+  \item Proved a formula for the number of 3-Diophantine triples in a
+    finite field with an odd prime cardinality.
+  \item Developed an asymptotic formula for the number of
+    \(k\)-Diophantine \(m\)-tuples in a finite field with an odd prime
+    cardinality.
+    % \item Presented this work at the Young Mathematician Conference
+    %   (August 2021) at The Ohio State University.
+  \end{itemize}
+}
+
+\cventry{June~2019~--~August~2019}{Simons Summer Research
+  Fellow}{Stony Brook University}{Stony Brook, NY}{}{
+  \begin{itemize}
+  \item Added photoacoustic tomography functionality to the
+    Orthopaedic Bioengineering Lab's proprietary quantitative
+    ultrasound machine.
+  \item Adapted a numerical algorithm to reconstruct images of
+    phantoms using Fourier transforms in MATLAB to the lab-specific
+    hardware.
+  \end{itemize}
+}
+
+% containing the list of publications
+\printbibheading
+\printbibliography[heading=subbibliography,keyword={journal},title={Journal
+  Articles}]
+\printbibliography[heading=subbibliography,keyword={preprint},title={Preprints}]
+\printbibliography[heading=subbibliography,keyword={presentation},title={Presentations}]
+\printbibliography[heading=subbibliography,keyword={blog},title={Online
+  Articles}]
+
+\section{Teaching and Community Involvement}
+
+\cventry{August~2025~--~Present}{Teaching Assistant}{Princeton
+  University}{Princeton, NJ}{}{
+  \begin{itemize}
+  \item Teaching Probability and Stochastic Systems (ORF 309) through
+    weekly precepts and office hours.
+  \end{itemize}
+}
+
+\cventry{July~2024~--~August~2024}{Summer Geometry Initiative (SGI)
+  2024 Volunteer}{Massachusetts Institute of Technology}{Cambridge,
+  MA}{}{
+  \begin{itemize}
+  \item Facilitated research dialogue between mentors and fellows on
+    various topics within geometry processing, including medical
+    imaging and architectural algorithms.
+  \end{itemize}
+}
+
+% \cventry{November~2018~--~February~2020}{Patient Education
+% Volunteer}{Stony Brook University Medical Center}{Stony Brook,
+% NY}{}{
+% \begin{itemize}
+% \item Helped patients access health records electronically through
+%   the Patient Portal; received the Presidential Award for Volunteer
+%   Service.
+% \end{itemize}
+% }
+
+\section{Skills}
+
+\cvitem{Software}{C/C++, Python, LaTeX, MATLAB, Lua, GNU/Linux}
+% \cvitem{Libraries}{Geometry Central, libigl, Eigen, Gurobi, Voro++,
+% SageMath} \cvitem{Hardware}{Raspberry Pi, Arduino}
+\cvitem{Languages}{English (Native), Mandarin (Intermediate), Latin}
+
+
+% \section{Work Experience}
+%
+% \cventry{January~2024--~January~2025}{Software Engineer}{Yambo,
+% LLC}{Los Angeles, CA}{}{
+% \begin{itemize}
+%     % \item Building automatic triangular arbitrage strategies for
+%     %   cryptocurrencies on the dYdX exchange using flash loans.
+% \item Developing support for the awarding of user-defined prizes
+%   backed by modern blockchains on Yambo's patented method to embed
+%   UGC micro-games on the web.
+% \end{itemize}
+% }
+
+\end{document}
